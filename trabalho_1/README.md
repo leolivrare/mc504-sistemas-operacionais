@@ -23,17 +23,21 @@ A escolha desse problema se deve à sua complexidade e à necessidade de sincron
 1. **Clone o repositório para o seu computador**: ```git clone https://github.com/leolivrare/mc504-sistemas-operacionais```
 2. **Acesse o diretório do projeto**: ```cd mc504-sistemas-operacionais/trabalho_1```
 3. **Compile o programa usando o Makefile**: ```make compile```
+    
     *Isso irá compilar o programa e gerar o executável.*
 4. **Execute o programa**: ```make run```
+    
     *Isso irá executar o programa compilado e mostrará a saída no terminal.*
 
 #### Comandos adicionais
 
-**Se você quiser realizar a compilação e execução em um único comando, você pode usar o seguinte comando:** ```make compile-and-run```
-*Isso irá compilar o programa e, em seguida, executá-lo em um único passo.*
+- **Se você quiser realizar a compilação e execução em um único comando, você pode usar o seguinte comando:** ```make compile-and-run```
+   
+   *Isso irá compilar o programa e, em seguida, executá-lo em um único passo.*
 
-**Para limpar os arquivos gerados durante a compilação, você pode executar o seguinte comando:** ```make clean```
-*Isso irá remover os arquivos temporários e o executável gerado.*
+- **Para limpar os arquivos gerados durante a compilação, você pode executar o seguinte comando:** ```make clean```
+   
+   *Isso irá remover os arquivos temporários e o executável gerado.*
 
 
 **Importante:** Certifique-se de adaptar as instruções de acordo com o nome do seu projeto e o local onde você clonou o repositório.
