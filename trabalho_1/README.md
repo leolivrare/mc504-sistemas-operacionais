@@ -47,10 +47,6 @@ A implementação do problema "Construindo H2O" foi baseada no pseudocódigo for
 
 Na thread do oxigênio, é adquirido o mutex, um oxigênio é gerado e é verificado se existem hidrogênios suficientes para formar uma molécula de água. Caso haja hidrogênios suficientes, são sinalizados os semáforos de oxigênio e hidrogênio. Em seguida, a thread aguarda o sinal do semáforo de oxigênio, invoca a função "generate_h2o()" para representar a criação de uma molécula de água, espera pela barreira e libera o mutex. A mesma lógica é aplicada à thread do hidrogênio.
 
-Durante a implementação, surgiram dois problemas a serem solucionados. O primeiro estava relacionado à animação, pois as threads eram criadas muito rapidamente. Para solucionar esse problema, foi introduzido um sleep() para tornar a animação mais lenta. Além disso, foi utilizado outro mutex para garantir que apenas a função "animation()" tivesse acesso à região crítica para impressão.
-
-O segundo problema ocorreu devido à presença da função "generate_h2o()" tanto na thread do hidrogênio quanto na do oxigênio, resultando na impressão duplicada da quantidade de água gerada. Essa duplicação foi corrigida na implementação.
-
 Por fim, durante a implementação do problema "Construindo H2O", também foi explorado o conceito de barreira. A barreira foi preconfigurada para aceitar um número N de threads antes de sinalizar a continuação. Isso permitiu coordenar a montagem das moléculas de água, garantindo que não ocorresse a montagem simultânea de duas moléculas.
 
 Espera-se que esta implementação e observação do problema "Construindo H2O" contribuam para uma compreensão aprofundada dos conceitos de sincronização em processos multithread e demonstrem a importância dos semáforos como ferramentas de controle de concorrência.
